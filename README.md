@@ -19,3 +19,8 @@ this code is hiding our previous weather data
 ```
 
 this is some great documentation on it here: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+
+documentation on clip path generators:
+
+
+still having some bugs in the js function when showing the previous weather. also need to figure out my margin issues with the individual days.
