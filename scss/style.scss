@@ -35,7 +35,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    
+    background-image: url(../img/111.jpg);
     height: 100vh;
     overflow: hidden;
     color: var(--clr-light);
@@ -87,6 +87,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
+    
 }
 
 .date {
@@ -204,10 +205,11 @@ a {
     }
 }
 
-//previous weather slide up
+//previous weather slide up.. i don't like the all white background on this... will look for a beter solution
 
 .previous-weather {
-    background: var(--clr-light);
+    background: rgba(0, 0, 0, .7);
+    // background: var(--clr-light);
     color: var(--clr-dark);
     position: absolute;
     bottom: 0;
@@ -219,7 +221,7 @@ a {
 
 .show-previous-weather {
     position: absolute;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     left: 50%;
     width: 10rem;
     transform: translate(-50%, calc(-100% - 3rem));
@@ -228,25 +230,27 @@ a {
     line-height: 1;
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
     cursor: pointer;
-    color: var(--clr-gray);
+    color: var(--clr-light);
     border: 0;
     font-family: inherit;
 
     &:hover,
     &:focus {
-        color: var(--clr-dark);
+        color: var(--clr-light);
     }
 
     span {
         display: block;
         transform: rotate(0);
         transition: transform 300ms ease;
+        
     }
 }
 
 .previous-days {
     display: flex;
     justify-content: space-between;
+    color: var(--clr-light);
     
 }
 
