@@ -7,14 +7,15 @@ using this project to learn about APIs and further my knowledge/understanding in
 
 this code is hiding our previous weather data 
 
-``` .sr-only:not(:focus):not(:active) {
-     clip: rect(0 0 0 0);
-     clip-path: inset(50%);
-     height: 1px;
-     overflow: hidden;
-     position: absolute;
-     white-space: nowrap;
-     width: 1px;
+``` 
+    .sr-only:not(:focus):not(:active) {
+         clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
     }
 ```
 
@@ -23,4 +24,4 @@ this is some great documentation on it here: https://www.scottohara.me/blog/2017
 documentation on clip path generators:
 
 
-still having some bugs in the js function when showing the previous weather. also need to figure out my margin issues with the individual days.
+having some issues now with the API displying the temperature as well as wind direction, data is coming back NaN.

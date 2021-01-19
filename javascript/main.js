@@ -92,7 +92,7 @@ function displayTemperature(temperature) {
 	if (!isMetric()) {
 		returnTemp = (temperature - 32) * (5 / 9)
 	}
-	return Math.round(returnTemp)
+    return Math.round(returnTemp)
 }
 
 function displaySpeed(speed) {
@@ -121,7 +121,7 @@ function getWeather() {
                     windSpeed: data?.HWS?.av,
                     windDirectionDegrees: data.WD.most_common?.compass_degrees,
                     windDirectionCardinal: data.WD.most_common?.compass_point,
-                    date: new Date(data.Last_UTC)
+                    date: new Date(data.First_UTC)
                 }
             })
         })
